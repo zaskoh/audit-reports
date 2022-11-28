@@ -1,0 +1,7 @@
+# ide
+.idea/
+.vscode/
+
+# build
+build/*
+!build/.gitkeep

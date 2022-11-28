@@ -1,0 +1,6 @@
+base:
+  log_level: debug
+
+another:
+  boolean_example: true
+  string_example: okay

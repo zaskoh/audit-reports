@@ -1,0 +1,56 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out code into the go module directory
+      uses: actions/checkout@v2
+
+    - name: set up go 1.19.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.19.x
+
+    - name: run tests
+      run: make test
+
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code into the go module directory
+        uses: actions/checkout@v2
+
+      - name: set up go 1.19.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: 1.19.x
+
+      - name: install staticcheck
+        run: go install honnef.co/go/tools/cmd/staticcheck@master
+
+      - name: run lint
+        run: make lint
+  
+  benchmark:
+    name: benchmark
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out code into the go module directory
+      uses: actions/checkout@v2
+
+    - name: set up go 1.19.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.19.x
+
+    - name: run benchmark
+      run: make benchmark
