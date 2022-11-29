@@ -1,6 +1,6 @@
 .PHONY: all build lint test benchmark gocyclo
 
-PROJECT_NAME := __name_your_project__
+PROJECT_NAME := c4c-reports
 VERSION := $(shell git describe --tags --always --dirty="-dev")
 
 all: clean build

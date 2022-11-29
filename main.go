@@ -2,8 +2,8 @@ package main
 
 import (
 	"sync"
-	"time"
 
+	"github.com/zaskoh/discordbooter"
 	"github.com/zaskoh/go-starter/config"
 	"github.com/zaskoh/go-starter/logger"
 	"go.uber.org/zap"
@@ -26,26 +26,28 @@ func main() {
 }
 
 func startup() error {
+	logger.Info("booting c4c-reports - " + version)
 	ctx, cancelFunc, cancelChan := config.CreateLaunchContext()
 	defer cancelFunc()
 
-	// logic goes here.....
-	logger.Debug("Config LogLevel: " + config.Base.LogLevel)
-	logger.Error("config not set in config.yml: " + config.AnotherExample.NotInConfigYml)
-	logger.Info("Adding config-values can be done in /config/config.go")
-	logger.Warn("Version: " + version)
-	// logic goes here....
+	// boot discordbot
+	err := discordbooter.Start(ctx, &wg, config.DiscordConfig.Token)
+	if err != nil {
+		return err
+	}
+
+	// boot c4c report updater
+	// todo
 
 	// keep it running until we cancel
 	<-cancelChan
 	logger.Info("waiting for cleanup before shutdown")
 
 	// use ctx, so you can delete this block here!!!
-	time.Sleep(2 * time.Second)
+	//time.Sleep(2 * time.Second)
 	ctx.Done()
 	// use it, so you can delete this block here!!!
 
 	wg.Wait()
-	logger.Info("everything finished shutting down - bye")
 	return nil
 }

@@ -1,6 +1,7 @@
 base:
-  log_level: debug
+  log_level: dev
+  report_file: ./c4c-reports-backup.json
 
-another:
-  boolean_example: true
-  string_example: okay
+discord:
+  token: token-ok
+  channel: channel-ok
