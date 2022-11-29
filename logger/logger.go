@@ -3,7 +3,7 @@ package logger
 import (
 	"os"
 
-	"github.com/zaskoh/go-starter/config"
+	"github.com/zaskoh/c4c-reports/config"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

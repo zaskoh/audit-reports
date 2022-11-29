@@ -3,9 +3,9 @@ package main
 import (
 	"sync"
 
+	"github.com/zaskoh/c4c-reports/config"
+	"github.com/zaskoh/c4c-reports/logger"
 	"github.com/zaskoh/discordbooter"
-	"github.com/zaskoh/go-starter/config"
-	"github.com/zaskoh/go-starter/logger"
 	"go.uber.org/zap"
 )
 
