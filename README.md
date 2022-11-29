@@ -51,4 +51,4 @@ DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./build/c4c-reports --config=/path/to/conf
 ```
 
 ### Note
-You need a discord token and a channel. Checkout https://github.com/zaskoh/discordbooter how to get the token.
+If you want to get informed in discord, you need a token and channel env. How to get them you can checkout https://github.com/zaskoh/discordbooter 
