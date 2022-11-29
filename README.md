@@ -21,7 +21,7 @@
     </a>
 </p>
 
-**c4c-reports** will check https://code4rena.com/reports/ for new reports and inform you via discord.
+**c4c-reports** will check https://code4rena.com/reports/ for new reports and inform you via discord / per log.
 
 ## Getting started
 
@@ -34,12 +34,14 @@ make build
 
 ### Run
 With the flag --config you can define the path to the config file.  
-Important is the discord token and channel. You can add them to the config-file or define them as environment variables (DISCORD_TOKEN + DISCORD_CHANNEL).
-Also you can change the path where the backup-file will be stored and the log_level.
+
+If you want to get informed via discord you need the token and channel (add them to your config or set as environment variables DISCORD_TOKEN + DISCORD_CHANNEL).
+
+If you just want to get the log in your terminal, use --no-discord flag.
 
 Examples
 ```bash
-go run main.go --config=config.yml
+go run main.go --config=config.yml --no-discord
 
 DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./c4c-reports
 

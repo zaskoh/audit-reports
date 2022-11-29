@@ -11,7 +11,8 @@ import (
 )
 
 var (
-	configPath = flag.String("config", "config.yml", "config file")
+	configPath = flag.String("config", "config.yml", "path to config file")
+	noDiscord  = flag.Bool("no-discord", false, "use to deactivate the discord logging")
 )
 
 func init() {
@@ -33,6 +34,7 @@ type baseConfig struct {
 }
 
 type discordConfig struct {
+	Active  bool
 	Token   string `yaml:"token" env:"DISCORD_TOKEN" env-default:""`
 	Channel string `yaml:"channel" env:"DISCORD_CHANNEL" env-default:""`
 }
@@ -60,6 +62,7 @@ func loadConfiguration() error {
 
 	Base = confLoad.BaseConfig
 	DiscordConfig = confLoad.DiscordConfig
+	DiscordConfig.Active = !isFlagPassed("no-discord")
 	return nil
 }
 
@@ -80,4 +83,14 @@ func CreateLaunchContext() (context.Context, func(), chan bool) {
 		close(canceledChanChan)
 	}
 	return ctx, cancel, canceledChanChan
+}
+
+func isFlagPassed(name string) bool {
+	found := false
+	flag.Visit(func(f *flag.Flag) {
+		if f.Name == name {
+			found = true
+		}
+	})
+	return found
 }

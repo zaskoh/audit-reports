@@ -30,10 +30,13 @@ func startup() error {
 	ctx, cancelFunc, cancelChan := config.CreateLaunchContext()
 	defer cancelFunc()
 
-	// boot discordbot
-	err := discordbooter.Start(ctx, &wg, config.DiscordConfig.Token)
-	if err != nil {
-		return err
+	// boot discordbot if active
+	if config.DiscordConfig.Active {
+		logger.Info("booting discord bot")
+		err := discordbooter.Start(ctx, &wg, config.DiscordConfig.Token)
+		if err != nil {
+			return err
+		}
 	}
 
 	// boot c4c report updater
