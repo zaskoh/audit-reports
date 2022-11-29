@@ -1,4 +1,4 @@
-module github.com/zaskoh/go-starter
+module github.com/zaskoh/c4c-reports
 
 go 1.19
 
