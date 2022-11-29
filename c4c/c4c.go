@@ -53,7 +53,7 @@ func Start() error {
 					if config.DiscordConfig.Active {
 						err := discordbooter.SendMessage(
 							config.DiscordConfig.Channel,
-							"New Report "+data.Slug+" available: "+data.Findings,
+							"New Report "+data.Slug+" available: "+data.Site,
 						)
 						if err != nil {
 							logger.Error("failed to send to discord", zap.Error(err))
