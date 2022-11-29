@@ -1,5 +1,6 @@
 base:
   log_level: dev
+  report_check_interval: 3600
   report_file: ./c4c-reports-backup.json
 
 discord:

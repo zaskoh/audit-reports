@@ -12,7 +12,7 @@ import (
 
 var (
 	configPath = flag.String("config", "config.yml", "path to config file")
-	noDiscord  = flag.Bool("no-discord", false, "use to deactivate the discord logging")
+	_          = flag.Bool("no-discord", false, "use to deactivate the discord logging")
 )
 
 func init() {
@@ -29,8 +29,9 @@ type loadConfig struct {
 }
 
 type baseConfig struct {
-	LogLevel   string `yaml:"log_level" env:"LOG_LEVEL" env-default:"debug"`
-	ReportFile string `yaml:"report_file" env:"C4C_REPORT_FILE" env-default:"./c4c-reports-backup.json"`
+	LogLevel            string `yaml:"log_level" env:"LOG_LEVEL" env-default:"debug"`
+	ReportFile          string `yaml:"report_file" env:"C4C_REPORT_FILE" env-default:"./c4c-reports-backup.json"`
+	ReportCheckInterval int    `yaml:"report_check_interval" env-default:"3600"`
 }
 
 type discordConfig struct {

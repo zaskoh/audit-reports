@@ -23,6 +23,8 @@
 
 **c4c-reports** will check https://code4rena.com/reports/ for new reports and inform you via discord / per log.
 
+![discord message](/img/discord-info.png)
+
 ## Getting started
 
 ### Installing and building

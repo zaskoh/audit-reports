@@ -3,6 +3,7 @@ package main
 import (
 	"sync"
 
+	"github.com/zaskoh/c4c-reports/c4c"
 	"github.com/zaskoh/c4c-reports/config"
 	"github.com/zaskoh/c4c-reports/logger"
 	"github.com/zaskoh/discordbooter"
@@ -40,7 +41,7 @@ func startup() error {
 	}
 
 	// boot c4c report updater
-	// todo
+	c4c.Start()
 
 	// keep it running until we cancel
 	<-cancelChan
