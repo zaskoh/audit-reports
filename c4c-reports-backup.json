@@ -729,6 +729,16 @@
     "findings": "https://github.com/code-423n4/2022-08-rigor-findings/issues",
     "site": "https://code4rena.com/reports/2022-08-rigor"
   },
+  "2022-09-artgobblers": {
+    "slug": "2022-09-artgobblers",
+    "findings": "https://github.com/code-423n4/2022-09-artgobblers-findings/issues",
+    "site": "https://code4rena.com/reports/2022-09-artgobblers"
+  },
+  "2022-09-frax": {
+    "slug": "2022-09-frax",
+    "findings": "https://github.com/code-423n4/2022-09-frax-findings/issues",
+    "site": "https://code4rena.com/reports/2022-09-frax"
+  },
   "2022-09-nouns-builder": {
     "slug": "2022-09-nouns-builder",
     "findings": "https://github.com/code-423n4/2022-09-nouns-builder-findings/issues",
@@ -748,5 +758,15 @@
     "slug": "2022-09-vtvl",
     "findings": "https://github.com/code-423n4/2022-09-vtvl-findings/issues",
     "site": "https://code4rena.com/reports/2022-09-vtvl"
+  },
+  "2022-10-blur": {
+    "slug": "2022-10-blur",
+    "findings": "https://github.com/code-423n4/2022-10-blur-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-blur"
+  },
+  "2022-11-non-fungible": {
+    "slug": "2022-11-non-fungible",
+    "findings": "https://github.com/code-423n4/2022-11-non-fungible-findings/issues",
+    "site": "https://code4rena.com/reports/2022-11-non-fungible"
   }
 }
