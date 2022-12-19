@@ -674,6 +674,11 @@
     "findings": "https://github.com/code-423n4/2022-07-canto/issues",
     "site": "https://code4rena.com/reports/2022-07-canto"
   },
+  "2022-07-ens": {
+    "slug": "2022-07-ens",
+    "findings": "https://github.com/code-423n4/2022-07-ens-findings/issues",
+    "site": "https://code4rena.com/reports/2022-07-ens"
+  },
   "2022-07-fractional": {
     "slug": "2022-07-fractional",
     "findings": "https://github.com/code-423n4/2022-07-fractional-findings/issues",
@@ -763,6 +768,16 @@
     "slug": "2022-10-blur",
     "findings": "https://github.com/code-423n4/2022-10-blur-findings/issues",
     "site": "https://code4rena.com/reports/2022-10-blur"
+  },
+  "2022-10-holograph": {
+    "slug": "2022-10-holograph",
+    "findings": "https://github.com/code-423n4/2022-10-holograph-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-holograph"
+  },
+  "2022-11-foundation": {
+    "slug": "2022-11-foundation",
+    "findings": "",
+    "site": "https://code4rena.com/reports/2022-11-foundation"
   },
   "2022-11-non-fungible": {
     "slug": "2022-11-non-fungible",
