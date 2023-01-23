@@ -389,6 +389,11 @@
     "findings": "https://github.com/code-423n4/2022-02-aave-lens-findings/issues",
     "site": "https://code4rena.com/reports/2022-02-aave-lens"
   },
+  "2022-02-anchor": {
+    "slug": "2022-02-anchor",
+    "findings": "https://github.com/code-423n4/2022-02-anchor-findings/issues",
+    "site": "https://code4rena.com/reports/2022-02-anchor"
+  },
   "2022-02-badger-citadel": {
     "slug": "2022-02-badger-citadel",
     "findings": "https://github.com/code-423n4/2022-02-badger-citadel-findings/issues",
@@ -709,6 +714,11 @@
     "findings": "https://github.com/code-423n4/2022-08-foundation-findings/issues",
     "site": "https://code4rena.com/reports/2022-08-foundation"
   },
+  "2022-08-frax": {
+    "slug": "2022-08-frax",
+    "findings": "https://github.com/code-423n4/2022-08-frax-findings/issues",
+    "site": "https://code4rena.com/reports/2022-08-frax"
+  },
   "2022-08-mimo": {
     "slug": "2022-08-mimo",
     "findings": "https://github.com/code-423n4/2022-08-mimo-findings/issues",
@@ -764,6 +774,11 @@
     "findings": "https://github.com/code-423n4/2022-09-vtvl-findings/issues",
     "site": "https://code4rena.com/reports/2022-09-vtvl"
   },
+  "2022-09-y2k-finance": {
+    "slug": "2022-09-y2k-finance",
+    "findings": "https://github.com/code-423n4/2022-09-y2k-finance-findings/issues",
+    "site": "https://code4rena.com/reports/2022-09-y2k-finance"
+  },
   "2022-10-blur": {
     "slug": "2022-10-blur",
     "findings": "https://github.com/code-423n4/2022-10-blur-findings/issues",
@@ -774,14 +789,64 @@
     "findings": "https://github.com/code-423n4/2022-10-holograph-findings/issues",
     "site": "https://code4rena.com/reports/2022-10-holograph"
   },
+  "2022-10-inverse": {
+    "slug": "2022-10-inverse",
+    "findings": "https://github.com/code-423n4/2022-10-inverse-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-inverse"
+  },
+  "2022-10-juicebox": {
+    "slug": "2022-10-juicebox",
+    "findings": "https://github.com/code-423n4/2022-10-juicebox-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-juicebox"
+  },
+  "2022-10-paladin": {
+    "slug": "2022-10-paladin",
+    "findings": "https://github.com/code-423n4/2022-10-paladin-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-paladin"
+  },
+  "2022-10-thegraph": {
+    "slug": "2022-10-thegraph",
+    "findings": "https://github.com/code-423n4/2022-10-thegraph-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-thegraph"
+  },
+  "2022-10-traderjoe": {
+    "slug": "2022-10-traderjoe",
+    "findings": "https://github.com/code-423n4/2022-10-traderjoe-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-traderjoe"
+  },
+  "2022-10-zksync": {
+    "slug": "2022-10-zksync",
+    "findings": "https://github.com/code-423n4/2022-10-zksync-findings/issues",
+    "site": "https://code4rena.com/reports/2022-10-zksync"
+  },
   "2022-11-foundation": {
     "slug": "2022-11-foundation",
     "findings": "",
     "site": "https://code4rena.com/reports/2022-11-foundation"
   },
+  "2022-11-looksrare": {
+    "slug": "2022-11-looksrare",
+    "findings": "https://github.com/code-423n4/2022-11-looksrare-findings/issues",
+    "site": "https://code4rena.com/reports/2022-11-looksrare"
+  },
   "2022-11-non-fungible": {
     "slug": "2022-11-non-fungible",
     "findings": "https://github.com/code-423n4/2022-11-non-fungible-findings/issues",
     "site": "https://code4rena.com/reports/2022-11-non-fungible"
+  },
+  "2022-11-size": {
+    "slug": "2022-11-size",
+    "findings": "https://github.com/code-423n4/2022-11-size-findings/issues",
+    "site": "https://code4rena.com/reports/2022-11-size"
+  },
+  "2022-11-stakehouse": {
+    "slug": "2022-11-stakehouse",
+    "findings": "https://github.com/code-423n4/2022-11-stakehouse-findings/issues",
+    "site": "https://code4rena.com/reports/2022-11-stakehouse"
+  },
+  "2022-12-pooltogether": {
+    "slug": "2022-12-pooltogether",
+    "findings": "https://github.com/code-423n4/2022-12-pooltogether-findings/issues",
+    "site": "https://code4rena.com/reports/2022-12-pooltogether"
   }
 }
