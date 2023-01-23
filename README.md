@@ -21,7 +21,7 @@
     </a>
 </p>
 
-**c4c-reports** will check https://code4rena.com/reports/ for new reports and inform you via discord / per log.
+**c4c-reports** will check https://code4rena.com/reports/ and https://app.sherlock.xyz/audits/contests for new reports and inform you via discord / log.
 
 ![discord message](/img/discord-info.png)
 
