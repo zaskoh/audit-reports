@@ -1,7 +1,8 @@
 base:
   log_level: dev
   report_check_interval: 3600
-  report_file: ./c4c-reports-backup.json
+  report_file_c4c: ./c4c-reports-backup.json
+  report_file_sherlock: ./sherlock-reports-backup.json
 
 discord:
   token: token-ok

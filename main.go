@@ -6,6 +6,7 @@ import (
 	"github.com/zaskoh/c4c-reports/c4c"
 	"github.com/zaskoh/c4c-reports/config"
 	"github.com/zaskoh/c4c-reports/logger"
+	"github.com/zaskoh/c4c-reports/sherlock"
 	"github.com/zaskoh/discordbooter"
 	"go.uber.org/zap"
 )
@@ -40,8 +41,9 @@ func startup() error {
 		}
 	}
 
-	// boot c4c report updater
+	// boot c4c & sherlock report updater
 	c4c.Start()
+	sherlock.Start()
 
 	// keep it running until we cancel
 	<-cancelChan

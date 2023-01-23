@@ -1,0 +1,132 @@
+{
+  "sherlock-audit/2022-08-sentiment": {
+    "slug": "sherlock-audit/2022-08-sentiment",
+    "findings": "https://app.sherlock.xyz/audits/contests/1",
+    "site": "https://app.sherlock.xyz/audits/contests/1"
+  },
+  "sherlock-audit/2022-09-harpie": {
+    "slug": "sherlock-audit/2022-09-harpie",
+    "findings": "https://app.sherlock.xyz/audits/contests/3",
+    "site": "https://app.sherlock.xyz/audits/contests/3"
+  },
+  "sherlock-audit/2022-09-knox": {
+    "slug": "sherlock-audit/2022-09-knox",
+    "findings": "https://app.sherlock.xyz/audits/contests/4",
+    "site": "https://app.sherlock.xyz/audits/contests/4"
+  },
+  "sherlock-audit/2022-09-notional": {
+    "slug": "sherlock-audit/2022-09-notional",
+    "findings": "https://app.sherlock.xyz/audits/contests/2",
+    "site": "https://app.sherlock.xyz/audits/contests/2"
+  },
+  "sherlock-audit/2022-09-sherlock": {
+    "slug": "sherlock-audit/2022-09-sherlock",
+    "findings": "https://app.sherlock.xyz/audits/contests/5",
+    "site": "https://app.sherlock.xyz/audits/contests/5"
+  },
+  "sherlock-audit/2022-10-astaria": {
+    "slug": "sherlock-audit/2022-10-astaria",
+    "findings": "https://app.sherlock.xyz/audits/contests/8",
+    "site": "https://app.sherlock.xyz/audits/contests/8"
+  },
+  "sherlock-audit/2022-10-illuminate": {
+    "slug": "sherlock-audit/2022-10-illuminate",
+    "findings": "https://app.sherlock.xyz/audits/contests/12",
+    "site": "https://app.sherlock.xyz/audits/contests/12"
+  },
+  "sherlock-audit/2022-10-merit-circle": {
+    "slug": "sherlock-audit/2022-10-merit-circle",
+    "findings": "https://app.sherlock.xyz/audits/contests/9",
+    "site": "https://app.sherlock.xyz/audits/contests/9"
+  },
+  "sherlock-audit/2022-10-mover": {
+    "slug": "sherlock-audit/2022-10-mover",
+    "findings": "https://app.sherlock.xyz/audits/contests/10",
+    "site": "https://app.sherlock.xyz/audits/contests/10"
+  },
+  "sherlock-audit/2022-10-mycelium": {
+    "slug": "sherlock-audit/2022-10-mycelium",
+    "findings": "https://app.sherlock.xyz/audits/contests/7",
+    "site": "https://app.sherlock.xyz/audits/contests/7"
+  },
+  "sherlock-audit/2022-10-nftport": {
+    "slug": "sherlock-audit/2022-10-nftport",
+    "findings": "https://app.sherlock.xyz/audits/contests/14",
+    "site": "https://app.sherlock.xyz/audits/contests/14"
+  },
+  "sherlock-audit/2022-10-rage-trade": {
+    "slug": "sherlock-audit/2022-10-rage-trade",
+    "findings": "https://app.sherlock.xyz/audits/contests/16",
+    "site": "https://app.sherlock.xyz/audits/contests/16"
+  },
+  "sherlock-audit/2022-10-union-finance": {
+    "slug": "sherlock-audit/2022-10-union-finance",
+    "findings": "https://app.sherlock.xyz/audits/contests/11",
+    "site": "https://app.sherlock.xyz/audits/contests/11"
+  },
+  "sherlock-audit/2022-11-bond": {
+    "slug": "sherlock-audit/2022-11-bond",
+    "findings": "https://app.sherlock.xyz/audits/contests/20",
+    "site": "https://app.sherlock.xyz/audits/contests/20"
+  },
+  "sherlock-audit/2022-11-buffer": {
+    "slug": "sherlock-audit/2022-11-buffer",
+    "findings": "https://app.sherlock.xyz/audits/contests/24",
+    "site": "https://app.sherlock.xyz/audits/contests/24"
+  },
+  "sherlock-audit/2022-11-bullvbear": {
+    "slug": "sherlock-audit/2022-11-bullvbear",
+    "findings": "https://app.sherlock.xyz/audits/contests/23",
+    "site": "https://app.sherlock.xyz/audits/contests/23"
+  },
+  "sherlock-audit/2022-11-dodo": {
+    "slug": "sherlock-audit/2022-11-dodo",
+    "findings": "https://app.sherlock.xyz/audits/contests/21",
+    "site": "https://app.sherlock.xyz/audits/contests/21"
+  },
+  "sherlock-audit/2022-11-float-capital": {
+    "slug": "sherlock-audit/2022-11-float-capital",
+    "findings": "https://app.sherlock.xyz/audits/contests/15",
+    "site": "https://app.sherlock.xyz/audits/contests/15"
+  },
+  "sherlock-audit/2022-11-frankendao": {
+    "slug": "sherlock-audit/2022-11-frankendao",
+    "findings": "https://app.sherlock.xyz/audits/contests/18",
+    "site": "https://app.sherlock.xyz/audits/contests/18"
+  },
+  "sherlock-audit/2022-11-isomorph": {
+    "slug": "sherlock-audit/2022-11-isomorph",
+    "findings": "https://app.sherlock.xyz/audits/contests/22",
+    "site": "https://app.sherlock.xyz/audits/contests/22"
+  },
+  "sherlock-audit/2022-11-nounsdao": {
+    "slug": "sherlock-audit/2022-11-nounsdao",
+    "findings": "https://app.sherlock.xyz/audits/contests/27",
+    "site": "https://app.sherlock.xyz/audits/contests/27"
+  },
+  "sherlock-audit/2022-11-opyn": {
+    "slug": "sherlock-audit/2022-11-opyn",
+    "findings": "https://app.sherlock.xyz/audits/contests/26",
+    "site": "https://app.sherlock.xyz/audits/contests/26"
+  },
+  "sherlock-audit/2022-11-sense": {
+    "slug": "sherlock-audit/2022-11-sense",
+    "findings": "https://app.sherlock.xyz/audits/contests/19",
+    "site": "https://app.sherlock.xyz/audits/contests/19"
+  },
+  "sherlock-audit/2022-11-sentiment": {
+    "slug": "sherlock-audit/2022-11-sentiment",
+    "findings": "https://app.sherlock.xyz/audits/contests/17",
+    "site": "https://app.sherlock.xyz/audits/contests/17"
+  },
+  "sherlock-audit/2022-11-telcoin": {
+    "slug": "sherlock-audit/2022-11-telcoin",
+    "findings": "https://app.sherlock.xyz/audits/contests/25",
+    "site": "https://app.sherlock.xyz/audits/contests/25"
+  },
+  "sherlock-audit/2022-12-sentiment": {
+    "slug": "sherlock-audit/2022-12-sentiment",
+    "findings": "https://app.sherlock.xyz/audits/contests/28",
+    "site": "https://app.sherlock.xyz/audits/contests/28"
+  }
+}

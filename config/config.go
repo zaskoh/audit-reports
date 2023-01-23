@@ -30,7 +30,8 @@ type loadConfig struct {
 
 type baseConfig struct {
 	LogLevel            string `yaml:"log_level" env:"LOG_LEVEL" env-default:"debug"`
-	ReportFile          string `yaml:"report_file" env:"C4C_REPORT_FILE" env-default:"./c4c-reports-backup.json"`
+	ReportFileC4c       string `yaml:"report_file_c4c" env:"C4C_REPORT_FILE" env-default:"./c4c-reports-backup.json"`
+	ReportFileSherlock  string `yaml:"report_file_sherlock" env:"SHERLOCK_REPORT_FILE" env-default:"./sherlock-reports-backup.json"`
 	ReportCheckInterval int    `yaml:"report_check_interval" env-default:"3600"`
 }
 

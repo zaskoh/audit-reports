@@ -1,4 +1,4 @@
-package c4c
+package sherlock
 
 import (
 	"encoding/json"
@@ -16,10 +16,10 @@ import (
 	"go.uber.org/zap"
 )
 
-var c4cReports map[string]types.C4cReports
+var sherlockReports map[string]types.SherlockReports
 
 func init() {
-	c4cReports = make(map[string]types.C4cReports)
+	sherlockReports = make(map[string]types.SherlockReports)
 }
 
 func Start() error {
@@ -33,17 +33,17 @@ func Start() error {
 	go func() {
 		for {
 			// get current reports
-			currentData, err := getCurrentReports()
+			reportList, err := getReportList()
 			if err != nil {
-				logger.Error("failed to load data from c4c: " + err.Error())
+				logger.Error("failed to load data from sherlock: " + err.Error())
 			}
 
 			// check for new entries
 			newReports := 0
-			for _, data := range currentData {
-				if _, exists := c4cReports[data.Slug]; !exists {
+			for _, data := range reportList {
+				if _, exists := sherlockReports[data.Slug]; !exists {
 					// add new entry
-					c4cReports[data.Slug] = data
+					sherlockReports[data.Slug] = data
 					newReports++
 
 					logger.Info("New Report available",
@@ -53,7 +53,7 @@ func Start() error {
 					if config.DiscordConfig.Active {
 						err := discordbooter.SendMessage(
 							config.DiscordConfig.Channel,
-							"New C4C-Report "+data.Slug+" available: "+data.Site,
+							"New Sherlock-Report "+data.Slug+" available: "+data.Site,
 						)
 						if err != nil {
 							logger.Error("failed to send to discord", zap.Error(err))
@@ -64,7 +64,7 @@ func Start() error {
 
 			// if we had new entries, update
 			if newReports > 0 {
-				updateC4cReports()
+				updateSherlockReports()
 			}
 
 			logger.Info("checked for new reports and got: " + strconv.Itoa(newReports))
@@ -76,20 +76,20 @@ func Start() error {
 	return nil
 }
 
-func updateC4cReports() {
+func updateSherlockReports() {
 	// save tokenList
-	c4cReportsFile, _ := json.MarshalIndent(c4cReports, "", "  ")
-	err := os.WriteFile(config.Base.ReportFileC4c, c4cReportsFile, 0666)
+	sherlockReportsFile, _ := json.MarshalIndent(sherlockReports, "", "  ")
+	err := os.WriteFile(config.Base.ReportFileSherlock, sherlockReportsFile, 0666)
 	if err != nil {
 		log.Fatalf("error in writing pairList - %s", err)
 	}
 }
 
-func getCurrentReports() (map[string]types.C4cReports, error) {
-	result := make(map[string]types.C4cReports, 0)
+func getReportList() (map[string]types.SherlockReports, error) {
+	result := make(map[string]types.SherlockReports, 0)
 	client := &http.Client{Timeout: 10 * time.Second}
 
-	req, err := http.NewRequest("GET", "https://code4rena.com/page-data/reports/page-data.json", nil)
+	req, err := http.NewRequest("GET", "https://mainnet-contest.sherlock.xyz/contests", nil)
 	if err != nil {
 		return result, err
 	}
@@ -105,17 +105,19 @@ func getCurrentReports() (map[string]types.C4cReports, error) {
 		return result, err
 	}
 
-	var jsonData types.C4cPageResponse
+	var jsonData []types.SherlockListResult
 	err = json.Unmarshal([]byte(jsonDataFromHttp), &jsonData)
 	if err != nil {
 		return result, err
 	}
 
-	for _, val := range jsonData.Result.Data.Reports.Edges {
-		result[val.Node.Frontmatter.Slug] = types.C4cReports{
-			Slug:     val.Node.Frontmatter.Slug,
-			Findings: val.Node.Frontmatter.Findings,
-			Site:     "https://code4rena.com/reports/" + val.Node.Frontmatter.Slug,
+	for _, val := range jsonData {
+		if val.Status == "FINISHED" && !val.Private {
+			result[val.TemplateRepoName] = types.SherlockReports{
+				Slug:     val.TemplateRepoName,
+				Findings: "https://app.sherlock.xyz/audits/contests/" + strconv.Itoa(val.ID),
+				Site:     "https://app.sherlock.xyz/audits/contests/" + strconv.Itoa(val.ID),
+			}
 		}
 	}
 
@@ -123,12 +125,12 @@ func getCurrentReports() (map[string]types.C4cReports, error) {
 }
 
 func loadBackupFile() error {
-	jsonC4cReports, err := os.OpenFile(config.Base.ReportFileC4c, os.O_CREATE, 0666)
+	jsonSherlockReports, err := os.OpenFile(config.Base.ReportFileSherlock, os.O_CREATE, 0666)
 	if err != nil {
 		return err
 	}
 
-	jsonByteValue, _ := io.ReadAll(jsonC4cReports)
-	json.Unmarshal([]byte(jsonByteValue), &c4cReports)
+	jsonByteValue, _ := io.ReadAll(jsonSherlockReports)
+	json.Unmarshal([]byte(jsonByteValue), &sherlockReports)
 	return nil
 }
