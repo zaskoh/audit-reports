@@ -1,27 +1,27 @@
-# c4c-reports
+# audit-reports
 
 <p>
-    <a href="https://pkg.go.dev/github.com/zaskoh/c4c-reports">
+    <a href="https://pkg.go.dev/github.com/zaskoh/audit-reports">
         <img alt="Go reference" src="https://img.shields.io/badge/reference-grey?style=flat-square&logo=Go">
     </a>
-    <a href="https://github.com/zaskoh/c4c-reports/actions/workflows/test.yml">
-        <img alt="GitHub Workflow Status" src="https://github.com/zaskoh/c4c-reports/workflows/Test/badge.svg?style=flat-square">
+    <a href="https://github.com/zaskoh/audit-reports/actions/workflows/test.yml">
+        <img alt="GitHub Workflow Status" src="https://github.com/zaskoh/audit-reports/workflows/Test/badge.svg?style=flat-square">
     </a>
-    <a href="https://goreportcard.com/report/github.com/zaskoh/c4c-reports">
+    <a href="https://goreportcard.com/report/github.com/zaskoh/audit-reports">
         <img alt="Go Report Card" src="https://img.shields.io/badge/go%20report-A+-brightgreen.svg?style=flat-square">
     </a>
-    <a href="https://github.com/zaskoh/c4c-reports/blob/main/go.mod">
-        <img alt="go version" src="https://img.shields.io/github/go-mod/go-version/zaskoh/c4c-reports?style=flat-square&logo=Go">
+    <a href="https://github.com/zaskoh/audit-reports/blob/main/go.mod">
+        <img alt="go version" src="https://img.shields.io/github/go-mod/go-version/zaskoh/audit-reports?style=flat-square&logo=Go">
     </a>
-    <a href="https://github.com/zaskoh/c4c-reports/blob/main/LICENSE">
-        <img alt="license" src="https://img.shields.io/github/license/zaskoh/c4c-reports?style=flat-square">
+    <a href="https://github.com/zaskoh/audit-reports/blob/main/LICENSE">
+        <img alt="license" src="https://img.shields.io/github/license/zaskoh/audit-reports?style=flat-square">
     </a>
-    <a href="https://github.com/zaskoh/c4c-reports/releases">
-        <img alt="GitHub Release" src="https://img.shields.io/github/v/release/zaskoh/c4c-reports?style=flat-square&include_prereleases&sort=semver">
+    <a href="https://github.com/zaskoh/audit-reports/releases">
+        <img alt="GitHub Release" src="https://img.shields.io/github/v/release/zaskoh/audit-reports?style=flat-square&include_prereleases&sort=semver">
     </a>
 </p>
 
-**c4c-reports** will check https://code4rena.com/reports/ and https://app.sherlock.xyz/audits/contests for new reports and inform you via discord / log.
+**audit-reports** will check https://code4rena.com/reports/ and https://app.sherlock.xyz/audits/contests for new reports and inform you via discord / log.
 
 ![discord message](/img/discord-info.png)
 
@@ -29,7 +29,7 @@
 
 ### Installing and building
 ```bash
-git clone git@github.com:zaskoh/c4c-reports.git
+git clone git@github.com:zaskoh/audit-reports.git
 
 make build
 ```
@@ -45,9 +45,9 @@ Examples
 ```bash
 go run main.go --config=config.yml --no-discord
 
-DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./c4c-reports
+DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./build/audit-reports
 
-DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./build/c4c-reports --config=/path/to/config.yml
+DISCORD_TOKEN=xyz DISCORD_CHANNEL=zzz ./build/audit-reports --config=/path/to/config.yml
 ```
 
 ### Note
