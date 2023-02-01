@@ -834,6 +834,11 @@
     "findings": "https://github.com/code-423n4/2022-11-non-fungible-findings/issues",
     "site": "https://code4rena.com/reports/2022-11-non-fungible"
   },
+  "2022-11-redactedcartel": {
+    "slug": "2022-11-redactedcartel",
+    "findings": "https://github.com/code-423n4/2022-11-redactedcartel-findings/issues",
+    "site": "https://code4rena.com/reports/2022-11-redactedcartel"
+  },
   "2022-11-size": {
     "slug": "2022-11-size",
     "findings": "https://github.com/code-423n4/2022-11-size-findings/issues",
@@ -844,9 +849,24 @@
     "findings": "https://github.com/code-423n4/2022-11-stakehouse-findings/issues",
     "site": "https://code4rena.com/reports/2022-11-stakehouse"
   },
+  "2022-12-backed": {
+    "slug": "2022-12-backed",
+    "findings": "https://github.com/code-423n4/2022-12-backed-findings/issues",
+    "site": "https://code4rena.com/reports/2022-12-backed"
+  },
+  "2022-12-caviar": {
+    "slug": "2022-12-caviar",
+    "findings": "https://github.com/code-423n4/2022-12-caviar-findings/issues",
+    "site": "https://code4rena.com/reports/2022-12-caviar"
+  },
   "2022-12-pooltogether": {
     "slug": "2022-12-pooltogether",
     "findings": "https://github.com/code-423n4/2022-12-pooltogether-findings/issues",
     "site": "https://code4rena.com/reports/2022-12-pooltogether"
+  },
+  "2022-12-prepo": {
+    "slug": "2022-12-prepo",
+    "findings": "https://github.com/code-423n4/2022-12-prepo-findings/issues",
+    "site": "https://code4rena.com/reports/2022-12-prepo"
   }
 }

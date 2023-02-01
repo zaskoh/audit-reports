@@ -124,9 +124,19 @@
     "findings": "https://app.sherlock.xyz/audits/contests/25",
     "site": "https://app.sherlock.xyz/audits/contests/25"
   },
+  "sherlock-audit/2022-12-notional": {
+    "slug": "sherlock-audit/2022-12-notional",
+    "findings": "https://app.sherlock.xyz/audits/contests/31",
+    "site": "https://app.sherlock.xyz/audits/contests/31"
+  },
   "sherlock-audit/2022-12-sentiment": {
     "slug": "sherlock-audit/2022-12-sentiment",
     "findings": "https://app.sherlock.xyz/audits/contests/28",
     "site": "https://app.sherlock.xyz/audits/contests/28"
+  },
+  "sherlock-audit/2023-01-illuminate": {
+    "slug": "sherlock-audit/2023-01-illuminate",
+    "findings": "https://app.sherlock.xyz/audits/contests/35",
+    "site": "https://app.sherlock.xyz/audits/contests/35"
   }
 }
